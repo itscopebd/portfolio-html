@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+    --primary-color: #FFA500;
+}
+
+body {
+    background-color: #141f31;
+
+}
+
+
+.common-wrap {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+/* header css start here  */
+
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner {
+    padding: 18px 0;
+    background-color: #0d1e3a;
+    border-bottom: 2px solid #02112a;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header__mob-hum svg {
+    color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+}
+
+.header__logo h4 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-style: italic;
+    line-height: 32px;
+
+}
+
+.header__btn a {
+    padding: 8px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+/* header css end here  */
