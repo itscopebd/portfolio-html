@@ -10,6 +10,8 @@
 
 :root {
     --primary-color: #FFA500;
+    --secondary-color: #fff;
+    --tertiary-color: #000;
 }
 
 body {
@@ -25,8 +27,16 @@ body {
 
 
 
+
 /* header css start here  */
 
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
 
 .header__wrap {
     display: flex;
@@ -38,6 +48,7 @@ body {
     padding: 18px 0;
     background-color: #0d1e3a;
     border-bottom: 2px solid #02112a;
+    margin-bottom: 50px;
 }
 
 .header__left {
@@ -53,6 +64,10 @@ body {
     height: 24px;
 }
 
+.header__middle {
+    display: none;
+}
+
 .header__logo h4 {
     color: var(--primary-color);
     font-size: 24px;
@@ -62,15 +77,160 @@ body {
 }
 
 .header__btn a {
-    padding: 8px;
+    padding: 10px 15px;
     background-color: var(--primary-color);
     border-radius: 6px;
     text-decoration: none;
-    border: 2px solid var(--primary-color);
-    color: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
     font-size: 16px;
     line-height: 22px;
+    transition: 0.5s;
 
 }
 
+.header__btn a:hover {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
 /* header css end here  */
+
+/* hero banner section css start here  */
+
+.hero__left {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.hero__left img {
+    width: 100%;
+}
+
+.hero__sub-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--secondary-color);
+    font-family: 600;
+    margin-bottom: 10px;
+}
+
+.hero__continue {
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--secondary-color);
+    font-family: 700;
+    margin-bottom: 20px;
+}
+
+.hero__des {
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* hero banner section css end here  */
+
+
+
+
+
+@media(min-width:1024px) {
+    .common-wrap {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+
+    /* header section css start here  */
+
+    .header__inner {
+        padding: 20px 0;
+    }
+
+    .header__middle {
+        display: block;
+    }
+
+    .header__middle ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+
+    }
+
+    .header__middle ul a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: 0.5s;
+
+    }
+
+    .header__middle ul a:hover {
+        color: var(--primary-color);
+        transition: 0.5s;
+
+    }
+
+    .header__mob-hum {
+        display: none;
+    }
+
+    .header__btn a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* header section css end here */
+
+    /* hero section css start here  */
+
+    .hero__inner {
+        padding: 60px 0;
+    }
+
+    .hero__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 80px;
+    }
+
+    .hero__right {
+        width: 45%;
+    }
+
+    .hero__right {
+        width: 45%;
+    }
+
+    .hero__left {
+        width: calc(100% - 760px);
+        margin-bottom: 0;
+    }
+
+    .hero__left img {
+        width: 100%;
+    }
+
+    /* hero section css end here  */
+
+
+}
